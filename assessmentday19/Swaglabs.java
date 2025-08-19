@@ -33,11 +33,11 @@ public class Swaglabs {
 		 driver.findElement(By.id("checkout")).click();
 		 Thread.sleep(3000);
 		 WebElement first_name= driver.findElement(By.id("first-name"));
-		 first_name.sendKeys("Swaroop");
+		 first_name.sendKeys("Rohith");
 		 first_name.sendKeys(Keys.ENTER);
 		 
 		 WebElement lastname = driver.findElement(By.cssSelector("input[id=\"last-name\"]"));
-		 lastname.sendKeys("Bhyri");
+		 lastname.sendKeys("Rasoti");
 		 lastname.sendKeys(Keys.ENTER);
 		 
 		 WebElement pin = driver.findElement(By.id("postal-code"));
@@ -66,3 +66,4 @@ public class Swaglabs {
 	}
 
 }
+
