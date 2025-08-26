@@ -9,7 +9,7 @@ public class prepared_statment {
 public static void main(String[] args) throws ClassNotFoundException, SQLException {
 	String url="jdbc:mysql://localhost:3306/db";
 	String username="root";
-	String password="Swaroop@2706";
+	String password="root";
 	
 	Class.forName("com.mysql.cj.jdbc.Driver");
 	Connection con =DriverManager.getConnection(url,username,password);
@@ -18,10 +18,11 @@ public static void main(String[] args) throws ClassNotFoundException, SQLExcepti
 	String query="insert into employee(id,name,salary,age) values(?,?,?,?)";
 	PreparedStatement pa=con.prepareStatement(query);
 	pa.setInt(1, 1);
-	pa.setString(2, "Suresh");
+	pa.setString(2, "rohith");
 	pa.setInt(3, 25);
 	pa.setInt(4, 500000);
 	pa.executeUpdate();
 	System.out.println("Inserted Sucessfully");
 }
 }
+
