@@ -31,10 +31,10 @@ public class Ebay_dependentTesting {
 	    	
 	        driver.findElement(By.cssSelector(".gh-identity-signed-out-unrecognized > a:nth-child(1)")).click();
 	        Thread.sleep(15000);
-	        driver.findElement(By.id("userid")).sendKeys("nasirhussainraghav@gmail.com");
+	        driver.findElement(By.id("userid")).sendKeys("rohithrasoti@gmail.com");
 	        driver.findElement(By.id("signin-continue-btn")).click();
 	        Thread.sleep(1000);
-	        driver.findElement(By.id("pass")).sendKeys("SaiRaghav@1903");
+	        driver.findElement(By.id("pass")).sendKeys("Rohith@8096");
 	        driver.findElement(By.id("sgnBt")).click();
 
 //	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
