@@ -32,10 +32,10 @@ public class ebay_cucumberpageclass {
 //		driver.findElement(By.xpath("//*[@id=\"gh\"]/nav/div[1]/span[1]/span/a")).click();
 		driver.findElement(By.cssSelector(".gh-identity-signed-out-unrecognized > a:nth-child(1)")).click();
 //		Thread.sleep(10000);
-		driver.findElement(By.id("userid")).sendKeys("nasirhussainraghav@gmail.com");
+		driver.findElement(By.id("userid")).sendKeys("rohithrasoti@gmail.com");
 		driver.findElement(By.id("signin-continue-btn")).click();
 		Thread.sleep(1000);
-		driver.findElement(By.id("pass")).sendKeys("SaiRaghav@1903");
+		driver.findElement(By.id("pass")).sendKeys("Rohith@8096");
 		driver.findElement(By.id("sgnBt")).click();
 //		WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(20));
 //		WebElement sfn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("passkeys-cancel-btn")));////a[@id='passkeys-cancel-btn']
@@ -102,7 +102,7 @@ public class ebay_cucumberpageclass {
 	    driver.findElement(By.id("gh-logo")).click();
 	    Thread.sleep(2000);
 
-	    // Hover over "Hi Nasir!" menu
+	    // Hover over "Hi Rohith!" menu
 	    WebElement hiMsg = driver.findElement(By.cssSelector("span.gh-identity__greeting"));
 	    Actions act = new Actions(driver);
 	    act.moveToElement(hiMsg).perform();
@@ -114,7 +114,7 @@ public class ebay_cucumberpageclass {
 	    driver.findElement(By.id("account-settings-link-PI")).click();
 	    Thread.sleep(2000);
 	    
-	    driver.findElement(By.id("pass")).sendKeys("SaiRaghav@1903");
+	    driver.findElement(By.id("pass")).sendKeys("Rohith@8096");
 		driver.findElement(By.id("sgnBt")).click();
 
 	   
@@ -124,26 +124,26 @@ public class ebay_cucumberpageclass {
 	   
 	    WebElement streetAddress = driver.findElement(By.cssSelector("input[aria-label='Street address']"));
 	    streetAddress.clear();
-	    streetAddress.sendKeys("Saptagiri Nagar,ACamp");
+	    streetAddress.sendKeys("HYD");
 	    Thread.sleep(1000);
 
 	    //Middle Name
 	    WebElement m_name = driver.findElement(By.id("middleName"));
 	    m_name.clear();
-	    m_name.sendKeys("Hussain");
+	    m_name.sendKeys("RASOTI");
 	    Thread.sleep(1000);
 	    
 
 	    // City
 	    WebElement city = driver.findElement(By.id("city"));
 	    city.clear();
-	    city.sendKeys("kurnool");
+	    city.sendKeys("HYD");
 	    Thread.sleep(1000);
 
 	    // Zipcode
 	    WebElement zipcode = driver.findElement(By.id("postalCode"));
 	    zipcode.clear();
-	    zipcode.sendKeys("518002");
+	    zipcode.sendKeys("500043");
 	    Thread.sleep(1000);
 
 	  
